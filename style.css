@@ -880,3 +880,309 @@ body {
     overflow-x: hidden;
   }
 }
+
+/* =========================================
+   FINAL MOBILE RESPONSIVE FIX
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* ---------- TABLET + MOBILE ---------- */
+
+@media (max-width: 1024px) {
+
+    .home,
+    .about,
+    .project,
+    .Tech-Stack,
+    .contact {
+        width: 100%;
+        max-width: 100%;
+        margin: 100px auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .home-container,
+    .about-container {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    /* Fix about image position */
+    .about img {
+        position: static;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto 20px;
+    }
+
+    /* Fix cards */
+    .card {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card .c1 {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    /* Projects */
+    .projects-container {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    /* Tech Stack */
+    .Tech-Stack {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Tech-Stack-container {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .Tech-Stack-card {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    /* IMPORTANT: keep tech images small */
+    .Tech-Stack-card img {
+        width: 100px;
+        height: 100px;
+        max-width: 100px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto 15px;
+    }
+
+    /* Home image */
+    .home img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* Contact */
+    .contact-content {
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+/* ---------- PHONE ---------- */
+
+@media (max-width: 768px) {
+
+    header {
+        display: none;
+    }
+
+    .home,
+    .about,
+    .project,
+    .Tech-Stack,
+    .contact {
+        margin: 80px auto;
+        padding: 0 15px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Home */
+    .home-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .info-home {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-home h1 {
+        font-size: 38px;
+        line-height: 1.1;
+    }
+
+    .info-home h3 {
+        font-size: 22px;
+    }
+
+    .info-p2 {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .btnn {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .btn-home1,
+    .btn-home2 {
+        width: auto;
+    }
+
+    .follow {
+        justify-content: center;
+    }
+
+    /* About */
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about img {
+        position: static;
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        margin: 0 auto 20px;
+    }
+
+    .card {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card .c1 {
+        width: 100%;
+        max-width: 330px;
+    }
+
+    /* Projects */
+    .projects-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .btns {
+        flex-wrap: wrap;
+    }
+
+    /* Tech Stack */
+    .Tech-Stack {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Tech-Stack-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 15px 0;
+    }
+
+    .Tech-Stack-card {
+        width: 100%;
+        max-width: 330px;
+        margin: 0 auto;
+    }
+
+    .Tech-Stack-card img {
+        width: 100px;
+        height: 100px;
+        max-width: 100px;
+        object-fit: contain;
+        margin: 0 auto 15px;
+    }
+
+    .Tech-Stack-card h3 {
+        font-size: 18px;
+    }
+
+    .Tech-Stack-card p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* Contact */
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    /* Footer */
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
